@@ -1,3 +1,6 @@
+export ARCHFLAGS="-arch x86_64"
+export GOPATH="$HOME/go"
+
 if [ -f ~/.bashrc ]; then
    source ~/.bashrc
 fi
@@ -10,6 +13,9 @@ fi
 
 # Set default editor to vim
 export EDITOR=/usr/bin/vim
+
+# set up PATH
+export PATH=/usr/local/bin:/usr/bin/:/bin:$GOPATH/bin:$HOME/platform-tools/
 
 #
 # Terminal Stuff
