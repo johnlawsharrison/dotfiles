@@ -27,9 +27,6 @@ macdown() {
 #
 #  Aliases
 #
-
-alias sl-ipmi='~/src/softlayer-tools/venv/bin/python ~/src/softlayer-tools/venv/bin/sl-ipmi'
-alias clou="~/cloudant/clou/venv/bin/python /Users/jlaws/cloudant/clou/venv/bin/clou"
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias mkdir='mkdir -pv'
@@ -52,4 +49,4 @@ alias gs='git status'
 alias gl='git log'
 alias gd='git diff'
 alias gp='git pull'
-alias ga='git add'
+alias ga='git add -p'
