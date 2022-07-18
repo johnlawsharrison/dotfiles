@@ -1,6 +1,5 @@
-export ARCHFLAGS="-arch x86_64"
-export GOPATH="$HOME/go"
-
+export PS1="\W \$ "
+export BASH_SILENCE_DEPRECATION_WARNING=1
 source ~/.git-completion.bash
 
 if [ -f ~/.bashrc ]; then
@@ -13,11 +12,8 @@ export EDITOR=/usr/bin/vim
 # set up PATH
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$GOPATH/bin:$HOME/platform-tools:$HOME/bin
 
-# python via homebrew
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-
 # Global NPM packages
-export PATH=$HOME/.npm-global/bin:$PATH
+# export PATH=$HOME/.npm-global/bin:$PATH
 
 # MacDown
 macdown() {
@@ -50,3 +46,9 @@ alias gl='git log'
 alias gd='git diff'
 alias gp='git pull'
 alias ga='git add -p'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.poetry/bin:$PATH"
